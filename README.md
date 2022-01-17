@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 원티드 프리온보딩 코스 [프론트엔드 코스]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 목차
 
-## Available Scripts
+## 목표
 
-In the project directory, you can run:
+> 원티드 페이지 상단 영역 React 기반 클론 코딩하기
 
-### `npm start`
+- React를 얼마나 잘 알고 잘 활용하는지 보여주기
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![상단 캡쳐 영역](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F869a0685-508c-4507-9acb-450f44ffa0b5%2FUntitled.png?table=block&id=fe51fbc2-762d-4606-9f49-fa391cd13b9e&spaceId=4b97eaca-7938-4c43-b27c-a0c55795a841&width=2000&userId=13d5f1d1-9943-4b72-bcfc-6bcdb668b248&cache=v2)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##### 유의 사항
 
-### `npm test`
+- 상단 캡쳐 영역 그대로 구현
+- 개발자도구를 활용하여 원티드의 리소스(사진 등)를 그대로 사용
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 필수 구현사항
 
-### `npm run build`
+#### 1. 상단 GNB(Global Navigation Bar)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+메뉴 클릭, hover 등 이벤트 구현 필요 x
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] 마크업 작업(HTML, CSS) **(필수)**
+- [ ] 햄버거 버튼
+- [ ] 로고
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 2. 슬라이드(or 캐러셀) 영역
 
-### `npm run eject`
+원티드 사이트와 똑같이 구현하기 / 라이브러리 사용 x
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [ ] 스와이프 이벤트 **(필수)**
+  - [ ] 일정 길이 이하로 움직일 시 이미지 제자리로
+  - [ ] 일정 길이 이상으로 움직일 시 이미지 넘기기
+  - [ ] 마우스 클릭을 떼기 전까지 이미지에 focus
+    - [ ] 나머지 이미지가 가운데로 와도 어둡게 보이기
+- [ ] 왼/오 버튼 클릭 이벤트 **(필수)**
+  - [ ] 슬라이드 이동 시 0.5초 정도 소요
+- [ ] focus 이미지가 중심에 오게 하기
+- [ ] focus되는 이미지를 제외하고는 색이 어둡게 보이기
+- [ ] 이미지가 슬라이드해서 정중앙으로 오게되면 정보창이 나타나게 하기
+- [ ] 새로 고침 시마다 이미지 다르게 렌더링
+- [ ] 3초 마다 이미지 자동으로 슬라이드하기
+- [ ] hover 시에 이미지 슬라이드 멈추기
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 3. 반응형(Responsive Web) 구현
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] GNB, 슬라이드 모두 반응형으로 구현 **(필수)**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 4. GitHub Repository 주소와 배포 링크 제출
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] README.md에 배포 링크 작성하기 **(필수)**
+- [ ] Netlify로 배포하기 **(필수)**
