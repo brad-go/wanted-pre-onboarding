@@ -1,0 +1,367 @@
+/* Global */
+
+button,
+a {
+  all: unset;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgb(0, 0, 0, 10%);
+  z-index: 100;
+}
+
+.nav-container {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: inherit;
+}
+
+/* Logo.js */
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-top__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-top__hamburger {
+  width: 17px;
+  height: 14px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.nav-top__title {
+  margin-bottom: 5px;
+}
+
+/* Menu.js */
+
+.nav-menu {
+  height: inherit;
+  text-align: center;
+  margin: 0;
+}
+
+.nav-menu__items {
+  height: inherit;
+  display: inline-block;
+}
+
+.nav-menu__items:hover {
+  border-bottom: 2px solid gainsboro;
+}
+
+.nav-menu__items a {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.nav-menu__items:nth-child(6) a::after,
+.nav-menu__items:nth-child(8) a::after {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: "New";
+  color: rgb(51, 102, 255);
+  font-size: 3px;
+  letter-spacing: -1px;
+  vertical-align: middle;
+  -webkit-text-size-adjust: none;
+}
+
+.nav-menu__items:nth-child(8) a::after {
+  content: "Beta";
+}
+
+.home-button {
+  display: none;
+}
+
+.home-button a {
+  padding-left: 20px !important;
+}
+
+/* Aside.js */
+.aside {
+  height: 100%;
+  padding: 9px 0;
+}
+
+.aside ul {
+  height: 100%;
+}
+
+.aside ul li {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.aside ul li > * {
+  padding: 0 10px;
+  line-height: 0.5;
+}
+
+.search-button {
+  position: relative;
+  margin-top: 7px;
+}
+
+.notice-button {
+  position: relative;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+.aside-badge {
+  position: absolute;
+  top: -2px;
+  left: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  padding: 0 !important;
+  border-radius: 5px;
+  background-color: rgb(51, 102, 255);
+  color: white;
+  font-size: 2px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.profile-button {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 0 !important;
+}
+
+.avatar-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #e1e2e3;
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url("https://lh3.googleusercontent.com/--lY9Vmg_YmY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuck3TE7F2x0FXiYDhBj3_Z3Hz8Iy-w/s96-c/photo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left-division {
+  display: flex !important;
+  align-items: center;
+}
+
+.left-division::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  margin: auto 10px;
+}
+
+.dashboard-button {
+  height: 30px;
+  margin-left: 15px;
+  padding: 0 10px !important;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  color: #666;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px !important;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* media */
+
+@media screen and (max-width: 767px) {
+  .nav-container {
+    width: 100%;
+    height: 110px;
+  }
+  .nav-top {
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+  }
+  .nav-menu {
+    justify-content: flex-start;
+    margin-right: 30px;
+    height: 50px;
+  }
+  .nav-menu {
+    justify-content: flex-start;
+    margin-right: 30px;
+    height: 50px;
+  }
+  .nav-menu__items a {
+    padding: 11px 10px 19px;
+    font-size: 13px;
+  }
+  .nav-menu__items:nth-child(6) a::after,
+  .nav-menu__items:nth-child(8) a::after {
+    top: 3px;
+    right: 11px;
+  }
+  .home-button {
+    display: inline-block;
+    box-shadow: inset 0 -2px rgb(51, 102, 255);
+  }
+  .aside {
+    margin-top: 3px;
+    height: 50px;
+  }
+  .search-button,
+  .notice-button {
+    margin: 0;
+    padding: 0 5px !important;
+  }
+  .profile-button {
+    display: none;
+  }
+  .profile-button ~ .aside-badge {
+    display: none;
+  }
+  .left-division {
+    display: none !important;
+  }
+  .mobile-visible,
+  .mobile-menu {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-container {
+    width: 90%;
+    height: 110px;
+  }
+  .nav-top {
+    width: 100%;
+    height: 60px;
+    padding: 15px 0;
+  }
+  .nav-menu {
+    justify-content: flex-start;
+    margin-right: 30px;
+    height: 50px;
+  }
+  .nav-menu__items a {
+    padding: 11px 10px 19px;
+    font-size: 13px;
+  }
+  .nav-menu__items:nth-child(6) a::after,
+  .nav-menu__items:nth-child(8) a::after {
+    top: 3px;
+    right: 11px;
+  }
+  .aside {
+    margin-top: 3px;
+    height: 50px;
+  }
+  .search-button,
+  .notice-button {
+    margin: 0;
+    padding: 0 5px !important;
+  }
+  .profile-button {
+    display: none;
+  }
+  .profile-button ~ .aside-badge {
+    display: none;
+  }
+  .left-division {
+    display: none !important;
+  }
+  .mobile-visible,
+  .mobile-menu {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav-container {
+    width: 90%;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1;
+    font-size: 13px;
+  }
+  .nav-menu__items a {
+    padding: 15px 0;
+  }
+  .nav-menu__items:nth-child(6) a::after,
+  .nav-menu__items:nth-child(8) a::after {
+    right: -1px;
+  }
+  .aside ul li > * {
+    padding: 0 5px;
+    line-height: 0.5;
+  }
+  .notice-button {
+    margin-right: 5px;
+  }
+  .profile-button {
+    margin-right: 0;
+  }
+  .dashboard-button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-container {
+    width: 87.72%;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
