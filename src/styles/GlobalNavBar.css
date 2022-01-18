@@ -215,7 +215,7 @@ a {
   line-height: 30px !important;
 }
 
-.mobile-menu {
+.mobile-hamburger {
   display: none;
 }
 
@@ -272,8 +272,8 @@ a {
   .left-division {
     display: none !important;
   }
-  .mobile-visible,
-  .mobile-menu {
+  .mobile-menu,
+  .mobile-hamburger {
     display: inline-block;
   }
 }
@@ -320,8 +320,8 @@ a {
   .left-division {
     display: none !important;
   }
-  .mobile-visible,
-  .mobile-menu {
+  .mobile-menu,
+  .mobile-hamburger {
     display: inline-block;
   }
 }

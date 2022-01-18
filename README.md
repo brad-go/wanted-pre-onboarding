@@ -53,3 +53,76 @@
 
 - [ ] README.md에 배포 링크 작성하기 **(필수)**
 - [ ] Netlify로 배포하기 **(필수)**
+<!--
+- 사이즈 조절 시 categories의 상태 변경하기
+  trouble
+  사이즈 조절 시 categories의 상태를 어떻게 변경해야 할지 몰랐었다.
+  스크린 크기가 변경될 때마다 변경되게 하고 싶었다.
+  if 문을 밖에 쓰니 무한 렌더링이 발생했고, 카테고리의 개수는 줄어들어서
+  원하는 대로 출력되도 원래대로 돌아오지 않았다.
+  useEffect를 사용해서 screenSize를 감시하게 하고 다시 한 번 해봤다.
+  무한 렌더링은 멈췄지만, 원래 카테고리 개수대로 돌아오지 않았다.
+  categories.slice()로 복사해서 해보려고 했지만 이번에는 카테고리가 너무
+  많아지는 현상이 있었다.
+  갑자기 번뜩 초기값을 설정하면 되지! 라고 떠올랐다.
+  저 카테고리들을 애초에 useState로 선언했었는데, 초깃값으로 선언해주고
+  useState의 초깃값으로 가져왔다.
+
+- 컴포넌트 명을 동적으로 넘겨서 컴포넌트 생성하기
+
+기존 코드
+
+```
+<button type="button" className="search-button" >
+  <svg xmlns="https://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+      <path id="qt2dnsql4a" d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"></path>
+    </defs>
+    <g fill="none" fillRule="evenodd">
+      <use fill="#333" fillRule="nonzero" stroke="#333" strokeWidth=".3" xlinkHref="#qt2dnsql4a"></use>
+    </g>
+  </svg>
+</button>
+  ...
+<button className="mobile-hamburger">
+  <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <path d="M9 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 9 7.5zm5.05 0a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 14.05 7.5zM4 7.5a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 4 7.5z" id="a"></path>
+    </defs>
+    <g fill="none" fillRule="evenodd">
+      <mask id="b" fill="#fff">
+        <use xlinkHref="#a"></use>
+      </mask>
+      <use fill="#333" xlinkHref="#a"></use>
+      <g mask="url(#b)" fill="#333">
+        <path d="M0 0h18v18H0z"></path>
+      </g>
+    </g>
+  </svg>
+</button>
+```
+
+1차 개선 코드
+
+```
+<li>
+  <SearchButton />
+</li>
+<li>
+  <NoticeButton />
+  <span className="aside-badge">N</span>
+</li>
+<li>
+  <ProfileButton />
+  <span className="aside-badge">N</span>
+</li>
+```
+
+2차 개선 코드
+
+````
+<AsideList btn={btns} />
+```
+-->
+
+````
