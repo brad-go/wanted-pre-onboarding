@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from './components/Slider.js';
+import Slider from './components/slider/Slider.js';
 import GlobalNavBar from './components/navbar/GlobalNavBar.js';
 import './styles/App.css';
 

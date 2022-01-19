@@ -1,0 +1,255 @@
+.slider-container {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+.slick-slider {
+  position: relative;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.slick-track {
+  position: relative;
+  left: 10px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+
+/* /////////////////////////////////////////////// SliderBtn.js ///////////////////////////////////////////////// */
+.slick-slide {
+  position: relative;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  padding: 0 10px;
+  box-sizing: content-box;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.slick-slide > div {
+  display: block;
+  user-select: none;
+}
+
+.banner {
+  display: inline-block;
+  width: 100%;
+  color: #333;
+  user-select: none;
+}
+
+.banner-image__box {
+  width: 100%;
+  user-select: none;
+}
+
+.banner-image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  filter: brightness(50%);
+  user-select: none;
+}
+
+.banner-image__active {
+  filter: brightness(100%);
+}
+
+.banner-info {
+  text-align: center;
+  color: #333;
+}
+
+.banner-info h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.banner-info h3 {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.banner-info hr {
+  display: none;
+}
+
+.directBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  height: 40px;
+  margin: 6 0 0 13px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  color: #36f;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* /////////////////////////////////////////////// SliderBtn.js ///////////////////////////////////////////////// */
+
+.slider-btn {
+  position: absolute;
+  top: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #333333;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.prev-btn {
+  left: calc((100% - 1210px) / 2);
+}
+
+.next-btn {
+  right: calc((100% - 1200px) / 2);
+}
+
+.arrow-container {
+  width: 100%;
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.arrow {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  font-size: inherit;
+  fill: currentColor;
+  user-select: none;
+}
+
+/* /////////////////////////////////////////////// Responsive ///////////////////////////////////////////////// */
+
+@media screen and (max-width: 767px) {
+  .slider-container {
+    padding-top: 0;
+    margin-top: 110px;
+  }
+  .slick-list {
+    padding: 0 40px;
+  }
+  .slick-slide > div {
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .slider-container {
+    padding-top: 0;
+    margin-top: 110px;
+  }
+  .slick-list {
+    padding: 0 40px;
+  }
+  .slick-slide > div {
+    margin: 20px 10px;
+  }
+  .banner-image {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .slider-container {
+    padding-top: 0;
+  }
+  .slick-list {
+    padding: 0 40px;
+  }
+  .slick-slide > div {
+    margin: 20px 10px;
+  }
+  .banner-image {
+    height: 183px;
+    border-radius: 3px 3px 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-container {
+    height: auto;
+  }
+  .slick-slide {
+    padding: 0 12px;
+  }
+  .slick-track {
+    left: 130px;
+  }
+  .banner-info {
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
+    width: 330px;
+    height: 146px;
+    border-radius: 4px;
+    background-color: white;
+    opacity: 0;
+    text-align: left;
+  }
+  .banner-info__active {
+    opacity: 1;
+  }
+  .banner-info h2 {
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .banner-info h3 {
+    margin: 0 20px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  .banner-info hr {
+    display: block;
+    flex-shrink: 0;
+    height: 1px;
+    margin: 0;
+    border: none;
+    background-color: #ececec;
+  }
+  .directBtn {
+    margin: 6px 0 0 13px;
+  }
+}
