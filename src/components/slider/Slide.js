@@ -1,21 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import DirectBtn from './DirectBtn.js';
 
 function Slide(props) {
-  const { sliderData, current, slideWidth, motion, handleTouchEvent } = props;
-  const [ isMouseOn, setMouseOn ] = useState(false);
-  const banner = useRef();
-
-  useEffect(() => {
-    handleTouchEvent(isMouseOn);
-  },[isMouseOn, handleTouchEvent])
+  const { sliderData, current, slideWidth, motion } = props;
 
   const slides = sliderData.map((slide, index) => {
     return (
       <div key={index} className="slick-slide" style={{width: slideWidth + 'px'}} >
         <div>
-          <div className="banner" ref={banner} > 
-            <div className="banner-image__box" onMouseOver={()=> setMouseOn(true)} onMouseLeave={() => setMouseOn(false)}>
+          <div className="banner" > 
+            <div className="banner-image__box">
               <a href="/">
                 <img className={index === current ? "banner-image banner-image__active" : "banner-image" } src={slide.image} alt="slides" />
               </a>
