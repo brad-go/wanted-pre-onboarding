@@ -20,7 +20,7 @@ function Slider() {
   const [ slidePadding, setSlidePadding ] = useState(24);
   const [ trackWidth, setTrackWidth ] = useState(slideWidth + slidePadding);
 
-  const [ eventOn, setEventOn ] = useState(false);
+  const [ setEventOn ] = useState(false);
   
   // 슬라이드 트랙을 가져오기
   const slickTrack = useRef();
