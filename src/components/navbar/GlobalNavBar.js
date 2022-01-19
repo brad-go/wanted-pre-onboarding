@@ -36,7 +36,7 @@ function GlobalNavBar() {
     } else {
       setCategories(initialState);
     }
-  }, [screenSize]);
+  }, [screenSize, categories, initialState]);
   
 
   return (

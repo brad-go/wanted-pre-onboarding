@@ -52,7 +52,7 @@ function Slider() {
     setTrackWidth(TOTAL_SLIDES * (slideWidth + slidePadding));
   }, [slideWidth, slidePadding, TOTAL_SLIDES]);
 
-
+  // 슬라이드 위에 마우스가 올라가면 이벤트가 동작하게
   const handleTouchEvent = (isMouseOn) => {
     if (isMouseOn) {
       setEventOn(true);

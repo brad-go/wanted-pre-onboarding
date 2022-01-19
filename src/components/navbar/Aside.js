@@ -17,7 +17,7 @@ function AsideList (props) {
 
 export default function Aside() {
   const data = dataBtns;
-  const [ btns, setBtns ] = useState(data);
+  const [ btns ] = useState(data);
 
   return (
     <aside className="aside">
