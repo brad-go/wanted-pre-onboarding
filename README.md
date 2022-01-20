@@ -1,6 +1,6 @@
 # 원티드 프리온보딩 코스 [프론트엔드 코스]
 
-## 목차
+- 배포링크: https://bradgo-wanted.netlify.app/
 
 ## 목표
 
@@ -51,13 +51,13 @@
 
 #### 3. 반응형(Responsive Web) 구현
 
-- [ ] GNB, 슬라이드 모두 반응형으로 구현 **(필수)**
+- [x] GNB, 슬라이드 모두 반응형으로 구현 **(필수)** (미완)
 - [x] 화면 사이즈에 따라 슬라이드의 크기가 반응형으로 조절
 
 #### 4. GitHub Repository 주소와 배포 링크 제출
 
-- [ ] README.md에 배포 링크 작성하기 **(필수)**
-- [ ] Netlify로 배포하기 **(필수)**
+- [x] README.md에 배포 링크 작성하기 **(필수)**
+- [x] Netlify로 배포하기 **(필수)**
 <!--
 - css calc 사용시 연산 양 옆에 공백이 반드시 필요! calc(100% - 1200px)
 - css float으로 동일한 간격으로 나열하기 https://www.biew.co.kr/entry/%EC%9B%B9%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%85%94%EA%B0%80-%EC%95%8C%EA%B3%A0%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0-display-table-%EC%86%8D%EC%84%B1
