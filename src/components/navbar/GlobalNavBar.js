@@ -37,7 +37,6 @@ function GlobalNavBar() {
       setCategories(initialState);
     }
   }, [screenSize, categories, initialState]);
-  
 
   return (
     <header className="navbar">

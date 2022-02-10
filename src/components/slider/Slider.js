@@ -61,29 +61,36 @@ function Slider() {
     }
   }
 
+  // const prevSlide = () => {
+  //   setCurrent(current === 0 ? SLIDE_LENGTH - 1 : current - 1);
+  // }
+
+  // const nextSlide = () => {
+  //   setCurrent(current === SLIDE_LENGTH - 1 ? 0 : current + 1);
+  // };
   const prevSlide = () => {
-    setCurrent(current === 0 ? SLIDE_LENGTH - 1 : current - 1);
+    setCurrent(current - 1);
   }
 
   const nextSlide = () => {
-    setCurrent(current === SLIDE_LENGTH - 1 ? 0 : current + 1);
+    setCurrent(current + 1);
   };
 
   // 버튼들을 통해 슬라이드의 상태값이 바뀔 때마다 화면 이동
   useEffect(() => {
-    if (current === 1) {
+    if (current === 2) {
       setTimeout(() => {
+        setCurrent(20);
         setMotion(false);
-        setCurrent(19);
       }, 500);
       setTimeout(() => {
         setMotion(true);
       }, 600);
     }
-    if (current === 26) {
+    if (current === 25) {
       setTimeout(() => {
         setMotion(false);
-        setCurrent(8);
+        setCurrent(7);
       }, 500);
       setTimeout(() => {
         setMotion(true);

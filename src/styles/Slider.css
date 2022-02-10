@@ -50,12 +50,11 @@
   display: inline-block;
   width: 100%;
   color: #333;
-  user-select: none;
+  pointer-events: none;
 }
 
 .banner-image__box {
   width: 100%;
-  user-select: none;
 }
 
 .banner-image {
@@ -65,7 +64,6 @@
   border-radius: 4px;
   object-fit: cover;
   filter: brightness(50%);
-  user-select: none;
 }
 
 .banner-image__active {
@@ -214,7 +212,7 @@
     padding: 0 12px;
   }
   .slick-track {
-    left: 130px;
+    left: 120px;
   }
   .banner-info {
     position: absolute;
